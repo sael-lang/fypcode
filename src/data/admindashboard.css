@@ -1,0 +1,24 @@
+.maindashboard{
+    background-color: black;
+    width: 100%;
+    height: 920px;
+    position: absolute;
+    display: flex;
+
+}
+.vaccinepatientdiv{
+    margin-top: 100px;
+    background-color:  #3ed37c;
+    width: 600px;
+    height: 400px;
+    margin-left: 200px;
+    border-radius: 10px;
+}
+.vaccinediv{
+    margin-top: 100px;
+    background-color:  #3ed37c;
+    width: 600px;
+    height: 400px;
+    margin-left: 700px;
+    border-radius: 10px;
+    position: absolute;}

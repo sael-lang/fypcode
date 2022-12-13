@@ -1,0 +1,260 @@
+
+  .slidebox{
+    background-color: rgb(0, 0, 0);
+    width: 1890px;
+    height: 600px;
+    position: absolute;
+  }
+  .slideshow{
+    margin-left: 1175px;
+    margin-top: 10px;
+   width: 700px;
+    height: 650px;
+    border-radius: 60% 40% 50% 50% / 60% 60% 40% 40%;
+    position: relative;
+    background-color:rgb(0,0,0,0.1);  
+    border: 5px  solid ;
+    border-color:rgb(24, 141, 82);
+  }
+  .slideshowpicture{
+    display: block;
+    width: 700px;
+    height: 650px;
+    border-radius: 60% 40% 50% 50% / 60% 60% 40% 40%;
+  }
+  .slideshowtext1{
+    color: rgb(24, 141, 82);
+    position: relative;
+    font-size: 60px;
+    margin-top:200px ;
+    margin-left: 100px;
+  }
+  .slideshowtext2{
+    color: rgb(24, 141, 82);
+    position: relative;
+    font-size: 25px;
+    margin-top:10px ;
+    margin-left: 100px;
+  }
+  
+  #slideset1 {position: absolute; }
+  #slideset1 > * {animation: 12s autoplay6 infinite linear;
+    position: absolute; top: 0; left: 0; opacity: 0.0e}
+    @keyframes autoplay6 {
+      0% {opacity: 0.0}
+      4% {opacity: 1.0}
+      33.33% {opacity: 1.0}
+      37.33% {opacity: 0.0}
+      100% {opacity: 0.0}
+    }
+    #slideset1 > *:nth-child(1) {animation-delay: 0s}
+  #slideset1 > *:nth-child(2) {animation-delay: 4s}
+  #slideset1 > *:nth-child(3) {animation-delay: 8s}
+  
+  .protectsection{
+    margin-top: 700px;
+    margin-left: 550px;
+    font-size: 60px;  
+    font-weight: bolder;
+    color: rgb(49, 138, 108);
+    position: absolute;
+  }
+  .protectsection1{
+    margin-top: -400px;
+    margin-left: 250px;
+    font-size: 40px;  
+    font-weight: bolder;
+    color: rgb(49, 138, 108);
+    position: absolute;
+  }
+  .protectsection1:hover{
+    color: rgb(160, 28, 138);
+  }
+  .protectsection2{
+    margin-top: -420px;
+    margin-left: 600px;
+    font-size: 40px;  
+    font-weight: bolder;
+    position: absolute;
+  }
+  .protectsection3{
+    margin-top: -280px;
+    margin-left: 200px;
+    font-size: 40px;  
+    font-weight: bolder;
+    color: rgb(49, 138, 108);
+    position: absolute;
+  }
+  .protectsection3:hover{
+    color: rgb(160, 28, 138);
+  }
+  .protectsection4{
+    margin-top: -280px;
+    margin-left: 600px;
+    font-size: 40px;  
+    font-weight: bolder;
+    position: absolute;
+  }
+  .protectsection5{
+    margin-top: -150px;
+    margin-left: 200px;
+    font-size: 40px;  
+    font-weight: bolder;
+    color: rgb(49, 138, 108);
+    position: absolute;
+  }
+  .protectsection5:hover{
+    color: rgb(160, 28, 138);
+  }
+  .protectsection6{
+    margin-top: -150px;
+    margin-left: 600px;
+    font-size: 40px;  
+    font-weight: bolder;
+    position: absolute;
+  }
+  .protectpicture{
+    margin-top: 850px;
+    margin-left: 1250px;
+    height: 500px;
+    width: 500px;
+  border-radius: 100%;
+   background-color: rgb(36, 99, 52);
+  }
+  .docterimagebbox{
+    width: 1900px;
+    margin-top: 90px;
+    height: 320px;
+    overflow: hidden;
+  }
+  .doctorimage{
+    object-fit: fill;
+  }
+  .doctertext{
+    position:absolute;
+    margin-top: -540px;
+    margin-left: 5px;
+    font-weight: bold;
+    color: rgb(31, 93, 151);
+  }
+  .doctertext1{
+    position:absolute;
+    margin-top: -610px;
+    font-size:40px;
+    font-weight: bold;
+    color: rgb(31, 93, 151);
+  }
+  .newssection{
+    margin-top: 200px;
+  margin-left: 500px;
+  border: 2px solid grey;
+  height: 520px;
+  width: 700px;
+  box-shadow: 0 8px 8px 1px  rgb(93, 182, 115);
+  border-radius: 4px;
+  }
+  .newssection1{
+    display: block;
+    width: 700px;
+    height: 420px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .Newsheader{
+  font-size: 50px;
+  font-weight:700;
+  margin-top: -150px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  color: rgb(36, 99, 52);
+  }
+  .updatesection{
+  height: 400px;
+  }
+  .updateheader{
+    font-size: 50px;
+    font-weight:700;
+    margin-bottom: 100px;
+    margin-left: 610px;
+    margin-top: 50px;
+    color: rgb(36, 99, 52);
+  }
+  .updateform{
+    margin-left: 100px;
+    margin-top: -50px;
+  }
+  .updateforminput{
+    width: 750px;
+    height: 30px;
+    margin-left: 340px;
+    border-radius: 4px;
+  }
+  .updateforminput:focus-within{
+  
+   outline: none !important;
+   border:2px solid rgb(36, 99, 52);
+  }
+  .updateformbuttom{
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    margin-left: 730px;
+    margin-top: 40px;
+    font-size: x-large;
+  }
+  .updateformbuttom:hover{
+    background-color:  rgb(36, 99, 52);
+    outline: none !important;
+  }
+  .contactussection{
+    background-color: rgb(36, 99, 52);
+    height: 330px;
+  }
+  
+  .contactusdata1{
+    color: white;
+    margin-left: 720px;
+    padding-top: 50px;
+    font-size: 30px;
+  }
+  .contactusdata2{
+    color: white;
+    margin-left: 50px;
+    margin-top: -40px;
+    font-size: 30px;
+  }
+  .contactusdata3{
+    color: white;
+    margin-left: 1350px;
+    margin-top: -40px;
+    font-size: 30px;
+  }
+  .contactusdata4{
+    color: white;
+    text-decoration: none;
+    margin-left: 730px;
+    font-size: 20px;
+  }
+  .contactusdata5{
+    color: white;
+    text-decoration: none;
+    margin-left: 730px;
+    font-size: 20px;
+  }
+  .contactusdata6{
+    color: white;
+    text-decoration: none;
+    margin-left: 730px;
+    font-size: 20px;
+  }
+  .contactusdata7{
+    color: white;
+    margin-top: -100px;
+    margin-left: 10px;
+  }
+  .contactusdata8{
+   height: 150px;
+   width: 150px;
+   margin-top: -100px;
+    margin-left: 1300px;
+  }
