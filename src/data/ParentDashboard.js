@@ -1,4 +1,4 @@
-import './parentdashboard.css'
+
 
 function ParentDashboard () {
 
