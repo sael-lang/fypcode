@@ -2,18 +2,16 @@ import React,{useState} from 'react';
 import './signup.css'
 import axios from 'axios';
 import { useNavigate} from 'react-router-dom'; 
-import countrydata from './countrydata.json';
 import DatePicker from 'react-date-picker';
 
 function Signup() {
-  const [username,setUsername]=useState("");
-  const [fname,setFname]=useState("");
-  const [lname,setLname]=useState("");
-  const [password,setPassword]=useState("");
-  const [repassword,setRepassword]=useState("");
-  const [email,setEmail]=useState("");
+  const [adminId,setadminId]=useState("");
+  const [adminPassword,setadminPassword]=useState("");
+  const [adminEmail,setadminEmail]=useState("");
+  const [adminFirstname,setadminFirstname]=useState("");
+  const [adminMiddlename,setadminMiddlename]=useState("");
+  const [adminLastname,setadminLastname]=useState("");
   const [phone,setPhone]=useState("");
-  const [country,setCountry]=useState("");
   const [DOB,setDOB]=useState(new Date());
   const history = useNavigate();
   var respons;
@@ -21,13 +19,13 @@ function Signup() {
   const saveData = async() =>
 {try{
     let formField = new FormData()
-        formField.append('username',username)
-        formField.append('fname',fname)
-        formField.append('lname',lname)
-        formField.append('password',password)
-        formField.append('email',email)
+        formField.append('adminId',adminId)
+        formField.append('adminEmail',adminEmail)
+        formField.append('adminPassword',adminPassword)
+        formField.append('adminFirstname',adminFirstname)
+        formField.append('adminMiddlename',adminMiddlename)
+        formField.append('adminLastname',adminLastname)
         formField.append('phone',phone)
-        formField.append('country',country)
         formField.append('DOB',DOB)
          await axios({
           method: 'post',
@@ -51,33 +49,20 @@ function Signup() {
   return (
     <div className='cat'>
     <form>
-        <h1 className='header'><b>Sign Uyyp </b></h1> 
-        <div className='font1'><b>First Name</b></div><div><b>Last Name</b></div>
-      <input className='input1' type="text" placeholder='Enter Your First Name' name="fname" value={fname} onChange={(e)=>{setFname(e.target.value)}}  /> 
-      <input className='input2' type="text" placeholder='Enter Your Last Name' name="lname" value={lname} onChange={(e)=>{setLname(e.target.value)}}  />
-        <div className='font2'><b>Username </b></div>
-      <input className='input3'  placeholder='Enter Your Username' type="text" name="Username" value={username} onChange={(e)=>{setUsername(e.target.value)}}  /> 
-      <div className='font2'><b>Email</b></div>
-      <input className='input3'placeholder='Enter Your Email' type="text" name="email"  value={email} onChange={(e)=>{setEmail(e.target.value)}} />
-      <div className='font2'><b>Password</b></div>
-      <input className='input3'  placeholder='At Least 8 Characters ' type="password" name="password" value={password} onChange={(e)=>{setPassword(e.target.value)}}  /> 
-      <div className='font2'><b>Repeat password</b></div>
-      <input className='input3' placeholder='Re-Enter Your Password' type="password" name="repassword" value={repassword} onChange={(e)=>{setRepassword(e.target.value)}}  />  
+        <h1 className='header'><b>Sign Up </b></h1> 
+        <div className='font1'><b>Admin Id</b></div><div><b>Admin Email</b></div>
+      <input className='input1' type="text" placeholder='Enter Your Admin Id' name="adminId" value={adminId} onChange={(e)=>{setadminId(e.target.value)}}  /> 
+      <input className='input2' type="text" placeholder='Enter Your  Admin Email' name="adminEmail" value={adminEmail} onChange={(e)=>{setadminEmail(e.target.value)}}  />
+        <div className='font2'><b>Admin Password </b></div>
+      <input className='input3'  placeholder='Enter Your Admin Password' type="password" name="adminPassword" value={adminPassword} onChange={(e)=>{setadminPassword(e.target.value)}}  /> 
+      <div className='font2'><b>Admin Firstname</b></div>
+      <input className='input3'placeholder='Enter Your Admin Firstname' type="text" name="adminFirstname"  value={adminFirstname} onChange={(e)=>{setadminFirstname(e.target.value)}} />
+      <div className='font2'><b>Admin Middlename</b></div>
+      <input className='input3'  placeholder='Enter your Admin Middlename' type="text" name="adminMiddlename" value={adminMiddlename} onChange={(e)=>{setadminMiddlename(e.target.value)}}  /> 
+      <div className='font2'><b>Admin Lastname</b></div>
+      <input className='input3' placeholder='Enter Your Admin Lastname' type="text" name="adminLastname" value={adminLastname} onChange={(e)=>{setadminLastname(e.target.value)}}  />  
       <div className='font2'><b>Phone</b></div>
       <input className='input3'placeholder='Enter Your Phone' type="text" name="phone"  value={phone} onChange={(e)=>{setPhone(e.target.value)}}/> 
-      <div className='font2'><b>Country</b></div>
-      <select className='input4' onChange={(e)=>{setCountry(e.target.value)}} >
-      <option value="">--Select Country--</option>
-      {
-        countrydata.map( record=>{
-          return(
-            <option key={record.value} value={record.label}>
-              {record.label}
-            </option>
-          )
-        })
-      }
-      </select>
       <div className='font2'><b>Date Of Birth</b></div>
       <DatePicker isClearable maxDate={new Date()} className='input4' onChange={(date)=>{ 
      setDOB(date)}} selected={DOB} value={DOB} /> <br /> <br />
