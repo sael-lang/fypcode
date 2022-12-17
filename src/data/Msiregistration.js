@@ -1,7 +1,7 @@
 import './dist/all.css'
 import './dist/styles.css'
 
-function AdminDashboard () {
+function Msiregister () {
 
   return (
       
@@ -15,5 +15,5 @@ function AdminDashboard () {
     )
   }
   
-  export default AdminDashboard
+  export default Msiregister
   
