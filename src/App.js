@@ -16,6 +16,7 @@ import Msiregister from "./data/Msiregistration";
 import Msidetails from "./data/Msidetails";
 import Adminvaccinemanagement from "./data/Adminvaccinemanagement";
 import HospitalRegister from "./data/HospitalRegistration";
+import HCW_Register from "./data/HCW_Registration";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
         <Route path="/forgotpassword" element={<><Forgotpassword/></>}/>
         <Route path="/Osdetails" element={<><Osdetails/></>}/>
         <Route path="/HospitalRegistration" element={<><HospitalRegister/></>}/>
+        <Route path="/HCW_Register" element={<><HCW_Register/></>}/>
       </Routes>
     </>
   );
