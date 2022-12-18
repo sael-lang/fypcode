@@ -21,7 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<><Navbar/><Landingpage/></>}/>
         <Route path="/home" element={<><Navbar/><Landingpage/></>}/>
-        <Route path="/msios" element={<><Navbar/><MsiOSregister/></>}/>
+        <Route path="/msios" element={<><MsiOSregister/></>}/>
         <Route path="/signin" element={<><Navbar/><Signin/></>}/>
         <Route path="/signup" element={<><Navbar/><Signup/></>}/>
         <Route path="/admindashboard" element={<><AdminDashboard/></>}/>
