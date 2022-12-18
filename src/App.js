@@ -15,6 +15,8 @@ import Osdetails from "./data/Osdetails";
 import Msiregister from "./data/Msiregistration";
 import Msidetails from "./data/Msidetails";
 import Adminvaccinemanagement from "./data/Adminvaccinemanagement";
+import HospitalRegister from "./data/HospitalRegistration";
+
 function App() {
   return (
     <>
@@ -34,6 +36,7 @@ function App() {
         <Route path="/account-verified/:Id" element={<><Confirming/></>}/>
         <Route path="/forgotpassword" element={<><Forgotpassword/></>}/>
         <Route path="/Osdetails" element={<><Osdetails/></>}/>
+        <Route path="/HospitalRegistration" element={<><HospitalRegister/></>}/>
       </Routes>
     </>
   );
